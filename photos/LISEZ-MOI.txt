@@ -1,0 +1,3 @@
+Photos utilisées : mr.jpg, mme.jpg (accueil et galerie), mr-portrait.jpg, mme-portrait.jpg (galerie).
+Remplacez-les par de nouvelles photos (JPG, ~1600 px, moins de 400 Ko) en gardant les mêmes noms.
+Vous pouvez en ajouter dans la liste « galerie » en haut de script.js.

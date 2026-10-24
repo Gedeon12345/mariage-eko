@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariage de Mr et Mme Eko · 19 décembre 2026</title>
+<meta name="description" content="Vous êtes invités au mariage de Mr et Mme Eko, le samedi 19 décembre 2026 à Bandjoun.">
+<meta name="theme-color" content="#2c2619">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- OUVERTURE : enveloppe -->
+<div class="intro" id="intro">
+  <div class="env" id="env">
+    <div class="env-back"></div>
+    <div class="card">
+      <span class="card-script" data-t="noms"></span>
+      <span class="card-date" data-t="dateCourte"></span>
+    </div>
+    <div class="env-front"></div>
+    <div class="flap"></div>
+    <div class="seal"><span data-t="sceauLettre"></span></div>
+  </div>
+  <button class="open-btn" id="openBtn" type="button" data-t="boutonOuvrir"></button>
+</div>
+
+<main class="site" id="site">
+
+  <!-- 1. ACCUEIL -->
+  <header class="hero" id="accueil">
+    <div class="hero-photo" role="img" aria-label="Photos de Mr et Mme Eko"><i></i><i></i></div>
+    <div class="hero-inner">
+      <p class="small" data-t="heroIntro"></p>
+      <h1 class="names" data-t="noms"></h1>
+      <p class="hero-line" data-t="heroPhrase"></p>
+      <p class="hero-date" data-t="dateLongue"></p>
+      <div class="countdown" id="countdown" aria-live="off">
+        <div><b id="cd-d">00</b><span>jours</span></div>
+        <div><b id="cd-h">00</b><span>heures</span></div>
+        <div><b id="cd-m">00</b><span>minutes</span></div>
+        <div><b id="cd-s">00</b><span>secondes</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"></div>
+  </header>
+
+  <!-- 2. NOTRE HISTOIRE -->
+  <section class="sec alt" id="histoire">
+    <p class="small reveal" data-t="histoireSur"></p>
+    <h2 class="title words" data-t="histoireTitre"></h2>
+    <div class="timeline" id="timeline"><div class="tl-line"><i id="tlFill"></i></div></div>
+  </section>
+
+  <!-- 3. GALERIE -->
+  <section class="sec" id="galerie">
+    <p class="small reveal" data-t="galerieSur"></p>
+    <h2 class="title words" data-t="galerieTitre"></h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <!-- 4. PROGRAMME -->
+  <section class="sec alt" id="programme">
+    <p class="small reveal" data-t="programmeSur"></p>
+    <h2 class="title words" data-t="programmeTitre"></h2>
+    <ol class="program" id="program"></ol>
+  </section>
+
+  <!-- 5. LE LIEU -->
+  <section class="sec" id="lieu">
+    <p class="small reveal" data-t="lieuSur"></p>
+    <h2 class="title words" data-t="lieuTitre"></h2>
+    <div class="places reveal" id="places"></div>
+    <div class="map reveal"><iframe id="mapFrame" title="Carte Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    <a class="btn reveal" id="routeBtn" target="_blank" rel="noopener" data-t="boutonItineraire"></a>
+  </section>
+
+  <!-- 6. TENUE -->
+  <section class="sec alt" id="tenue">
+    <p class="small reveal" data-t="tenueSur"></p>
+    <h2 class="title words" data-t="tenueTitre"></h2>
+    <p class="text reveal" data-t="tenueTexte"></p>
+    <div class="swatches reveal" id="swatches"></div>
+  </section>
+
+  <!-- 7. CONFIRMER MA PRÉSENCE -->
+  <section class="sec" id="rsvp">
+    <p class="small reveal" data-t="rsvpSur"></p>
+    <h2 class="title words" data-t="rsvpTitre"></h2>
+    <p class="text reveal" data-t="rsvpTexte"></p>
+    <p class="deadline reveal"><span data-t="rsvpLimiteLabel"></span> <b data-t="rsvpLimite"></b></p>
+    <a class="btn reveal" id="rsvpBtn" target="_blank" rel="noopener" data-t="boutonRsvp"></a>
+  </section>
+
+  <!-- 8. PIED DE PAGE -->
+  <footer class="foot">
+    <p class="foot-thanks reveal" data-t="merci"></p>
+    <p class="foot-ini reveal" data-t="initiales"></p>
+    <p class="foot-tag reveal" data-t="hashtag"></p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
