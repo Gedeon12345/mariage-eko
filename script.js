@@ -64,7 +64,7 @@ const CONTENU = {
   rsvpLimite: "30 novembre 2026",
   boutonRsvp: "Répondre à l’invitation",
   // Collez ici le lien de votre formulaire (Google Forms) ou de votre WhatsApp : https://wa.me/237XXXXXXXXX
-  rsvpLien: "https://forms.gle/REMPLACEZ-PAR-VOTRE-LIEN",
+  rsvpLien: "https://forms.gle/RGVdC124EF3wm6N76",
 
   merci: "Merci de faire partie de notre histoire"
 };
